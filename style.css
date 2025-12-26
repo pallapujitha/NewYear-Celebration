@@ -1,0 +1,97 @@
+body{
+margin:0;
+overflow:hidden;
+background:radial-gradient(circle at top,#1a2a6c,#b21f1f,#fdbb2d);
+font-family:Segoe UI;
+}
+
+.title{
+color:gold;
+text-align:center;
+font-size:50px;
+margin-top:20px;
+text-shadow:0 0 20px gold;
+}
+
+#countdown{
+display:flex;
+justify-content:center;
+gap:20px;
+color:white;
+}
+
+#countdown div{
+background:rgba(0,0,0,0.4);
+padding:12px 18px;
+border-radius:10px;
+text-align:center;
+}
+
+#countdown span{
+font-size:28px;
+color:gold;
+}
+
+.cake-wrap{
+position:absolute;
+left:50%;
+top:58%;
+transform:translate(-50%,-50%);
+text-align:center;
+}
+
+.cake-plate{
+width:280px;
+height:25px;
+background:#eee;
+border-radius:50%;
+box-shadow:0 10px 30px black;
+}
+
+.cake-layer{
+margin:auto;
+border-radius:12px;
+box-shadow:inset 0 -8px 0 rgba(0,0,0,0.3),0 8px 20px rgba(0,0,0,0.4);
+}
+
+.bottom{width:240px;height:90px;background:linear-gradient(#ff512f,#dd2476);}
+.middle{width:180px;height:80px;background:linear-gradient(#f7971e,#ffd200);margin-top:-10px;}
+.top{width:120px;height:70px;background:linear-gradient(#56ab2f,#a8e063);margin-top:-10px;}
+
+.cake-name{
+position:absolute;
+width:100%;
+top:-120px;
+color:white;
+font-size:26px;
+text-shadow:0 0 10px gold;
+letter-spacing:2px;
+}
+
+.candle{
+width:14px;
+height:70px;
+background:repeating-linear-gradient(45deg,white,white 6px,hotpink 6px,hotpink 12px);
+margin:auto;
+position:relative;
+top:-235px;
+border-radius:6px;
+}
+
+.flame{
+width:18px;
+height:18px;
+background:radial-gradient(circle,yellow,orange,red);
+border-radius:50%;
+position:absolute;
+top:-15px;
+left:-2px;
+animation:flame 0.4s infinite alternate;
+}
+
+@keyframes flame{from{transform:scale(1);}to{transform:scale(1.3);}}
+
+/* Mobile */
+@media(max-width:700px){
+.title{font-size:30px;}
+}
